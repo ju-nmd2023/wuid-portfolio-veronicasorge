@@ -1,0 +1,44 @@
+* {
+  font-family: "Comfortaa", sans-serif;
+}
+
+#logo {
+  font-weight: bolder;
+  font-size: 25pt;
+}
+
+body {
+  background-color: lightgrey;
+}
+img {
+  width: 300px;
+  margin-top: 0;
+  margin-left: 50px;
+}
+
+body {
+  font-size: 15pt;
+}
+
+.text-box {
+  width: 400px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.text-box {
+  padding-left: 20px;
+  size: 300px;
+}
+/*This code lines (from .container to here) were taken from ChatGPT.*/
+
+footer {
+  font-size: 15pt;
+  border-top: 1px solid grey;
+  margin-top: 2rem;
+}

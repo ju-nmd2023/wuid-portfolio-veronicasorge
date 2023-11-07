@@ -1,0 +1,78 @@
+* {
+  font-family: "Comfortaa", sans-serif;
+}
+
+#logo {
+  font-weight: bolder;
+  font-size: 25pt;
+}
+body {
+  background-color: lightgrey;
+}
+
+/* MAIN */
+header {
+  font-size: 15pt;
+}
+h1 {
+  font-size: 20pt;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 16pt;
+}
+
+.container {
+  width: 80%;
+  margin: 40px;
+}
+
+.contact-box {
+  background-color: white;
+  display: flex;
+}
+.contact-left {
+  flex-basis: 60%;
+  padding: 20px 40px;
+  color: rgb(85, 85, 85);
+  font-size: 14px;
+}
+
+.input-row .input-group {
+  flex-basis: 45%;
+}
+input {
+  width: 100%;
+  margin-top: 5px;
+  border: none;
+  border-bottom: 1px solid rgb(85, 85, 85);
+  outline: none;
+  padding-bottom: 5px;
+}
+.input-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+textarea {
+  width: 100%;
+  border: 1px solid rgb(85, 85, 85);
+  outline: none;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+.contact-right {
+  flex-basis: 40%;
+  padding: 40px;
+  background-color: rgb(85, 85, 85);
+  color: white;
+}
+
+/* FOOTER */
+footer {
+  font-size: 15pt;
+  border-top: 2px solid grey;
+  margin-top: 2rem;
+}
