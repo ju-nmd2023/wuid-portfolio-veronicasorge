@@ -60,6 +60,7 @@ footer {
   margin-top: 32px;
 }
 
+/* MEDIA QUERIES */
 @media screen and (max-width: 615px) {
   header,
   ul {

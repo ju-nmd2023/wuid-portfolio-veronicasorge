@@ -74,11 +74,16 @@ input {
   margin-bottom: 20px;
 }
 textarea {
-  width: 100%;
+  width: 60%;
   border: 1px solid rgb(85, 85, 85);
   outline: none;
   padding: 10px;
   margin-top: 5px;
+}
+
+.submit-button {
+  margin-top: 40px;
+  margin-left: 100%;
 }
 
 .contact-right {
@@ -95,6 +100,7 @@ footer {
   margin-top: 32px;
 }
 
+/* MEDIA QUERIES */
 @media screen and (max-width: 615px) {
   header,
   ul {
