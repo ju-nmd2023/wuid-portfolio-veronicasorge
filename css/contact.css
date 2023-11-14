@@ -2,25 +2,42 @@
   font-family: "Comfortaa", sans-serif;
 }
 
+/* HEADER */
+header {
+  display: flex;
+  align-items: center;
+  font-size: 12pt;
+  white-space: nowrap; /* this code was taken from chatgpt */
+}
+
 #logo {
   font-weight: bolder;
-  font-size: 25pt;
+  font-size: 20pt;
+  margin-left: 1rem;
 }
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+li {
+  margin-left: 3rem;
+}
+
+/* BODY */
+
 body {
   background-color: lightgrey;
 }
 
-/* MAIN */
-header {
-  font-size: 15pt;
-}
 h1 {
-  font-size: 20pt;
-  font-weight: 300;
+  font-size: 18pt;
+  margin-left: 3px;
 }
 
 h2 {
-  font-size: 16pt;
+  font-size: 15pt;
 }
 
 .container {
@@ -35,11 +52,12 @@ h2 {
 .contact-left {
   flex-basis: 60%;
   padding: 20px 40px;
+  padding-bottom: 40px;
   color: rgb(85, 85, 85);
   font-size: 14px;
 }
 
-.input-row .input-group {
+.input-row {
   flex-basis: 45%;
 }
 input {
@@ -74,5 +92,21 @@ textarea {
 footer {
   font-size: 15pt;
   border-top: 2px solid grey;
-  margin-top: 2rem;
+  margin-top: 32px;
+}
+
+@media screen and (max-width: 615px) {
+  header,
+  ul {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  li {
+    margin-left: 0px;
+  }
+  #logo {
+    margin-left: 38px;
+    margin-bottom: 0;
+  }
 }

@@ -4,17 +4,17 @@
 
 /* HEADER */
 
-#logo {
-  font-weight: bolder;
-  font-size: 20pt;
-  margin-left: 1rem;
-}
-
 header {
   display: flex;
   font-size: 12pt;
   align-items: center;
   white-space: nowrap; /* this code was taken from chatgpt */
+}
+
+#logo {
+  font-weight: bolder;
+  font-size: 20pt;
+  margin-left: 1rem;
 }
 
 ul {
@@ -23,38 +23,37 @@ ul {
 }
 
 li {
-  margin-left: 2rem;
+  margin-left: 3rem;
 }
 
 /* BODY */
-
-h2 {
-  font-size: 18pt;
-}
-
 body {
   background-color: lightgrey;
-  line-height: 1.5;
 }
+
+h1 {
+  font-size: 18pt;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* GRID */
 
 img {
-  width: 30rem;
-  margin-top: 0;
-  margin-left: 50px;
+  width: 100%;
 }
 
-.text-box {
-  width: 30rem;
-  height: 30rem;
-  overflow: hidden;
-  padding-left: 20px;
+figcaption {
+  padding-top: 10px;
+  font-size: 15pt;
 }
 
 /* FOOTER */
 footer {
   font-size: 15pt;
-  border-top: 1px solid grey;
-  margin-top: 2rem;
+  border-top: 2px solid grey;
+  margin-top: 32px;
 }
 
 @media screen and (max-width: 615px) {
@@ -71,15 +70,20 @@ footer {
     margin-left: 38px;
     margin-bottom: 0;
   }
-  img {
-    margin-left: 0;
+}
+
+@media screen and (min-width: 615px) {
+  section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
   }
 }
 
-@media screen and (min-width: 880px) {
-  .container {
+@media screen and (min-width: 1200px) {
+  section {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: start;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
   }
 }
