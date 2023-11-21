@@ -25,6 +25,15 @@ li {
   margin-left: 3rem;
 }
 
+nav a {
+  font-size: 12pt;
+  transition: font-size 0.3s ease-in-out;
+}
+
+nav a:hover {
+  font-size: 14pt;
+}
+
 /* BODY */
 
 body {
@@ -33,7 +42,22 @@ body {
 
 h1 {
   font-size: 18pt;
-  margin-left: 3px;
+  margin-left: 10px;
+  width: 50%;
+  animation-name: pulse;
+  animation-duration: 1.5s;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+    color: green;
+    margin-left: 5%;
+  }
 }
 
 h2 {
@@ -98,6 +122,7 @@ footer {
   font-size: 15pt;
   border-top: 2px solid grey;
   margin-top: 32px;
+  margin-left: 2px;
 }
 
 /* MEDIA QUERIES */
