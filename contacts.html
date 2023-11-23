@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Veronica</title>
     <link rel="stylesheet" href="css/contact.css" />
+    <script src="js/main.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,13 +29,19 @@
       <h1>connect with me!</h1>
       <div class="contact-box">
         <div class="contact-left">
-          <h2>send your request</h2>
           <form>
-
+            <h2 id="heading">send your request</h2>
             <div class="input-row">
               <div class="input-group">
                 <label>name</label>
-                <input type="text" placeholder="Name Surname" />
+                <input type="text" placeholder="Name" id="input-name" />
+              </div>
+            </div>
+
+            <div class="input-row">
+              <div class="input-group">
+                <label>surname</label>
+                <input type="text" placeholder="Surname" />
               </div>
             </div>
 
@@ -46,44 +53,34 @@
             </div>
 
             <div class="input-row">
-                <div class="input-group">
-                  <label>email</label>
-                  <input type="email" placeholder="yourname@gmail.com" />
-                </div>
+              <div class="input-group">
+                <label>email</label>
+                <input type="email" placeholder="yourname@gmail.com" />
               </div>
+            </div>
 
-              <div class="input-row">
-                  <div class="input-group">
-                    <label>subject</label>
-                    <input type="text" placeholder="project" />
-                  </div>
-                </div>
-
-                <label>message <br></label>
-              <textarea rows="5" placeholder="your message"></textarea>
-
-              <div class="submit-button">
-                <div class="input-row">
-                  <div class="input-group">
-                    <input type="submit"/>  
-                  </div>
-                </div>
+            <div class="input-row">
+              <div class="input-group">
+                <label>subject</label>
+                <input type="text" placeholder="project" />
               </div>
-              
-        </div>
+            </div>
+
+            <label>message <br /></label>
+            <textarea rows="5" placeholder="your message"></textarea>
           </form>
+          <button id="submit-button">Submit</button>
         </div>
         <div class="contact-right">
           <h2>contact me</h2>
-          <p> Email: veronicasorge@gmail.com
-          </p>
+          <p>Email: veronicasorge@gmail.com</p>
           <p>Phone number: +39 3932730869</p>
         </div>
       </div>
     </div>
   </body>
 
- <!--The contact form code was taken from GreatStack on Youtube-->
+  <!--The contact form code was taken from GreatStack on Youtube-->
 
   <footer>
     <p>Veronica Sorge 2023</p>

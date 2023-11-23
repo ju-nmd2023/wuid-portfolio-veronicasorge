@@ -27,6 +27,8 @@ li {
 
 nav a {
   font-size: 12pt;
+  color: black;
+  text-decoration: none;
   transition: font-size 0.3s ease-in-out;
 }
 
@@ -55,7 +57,7 @@ h1 {
   }
   50% {
     transform: scale(1.2);
-    color: green;
+    color: white;
     margin-left: 5%;
   }
 }
@@ -71,7 +73,6 @@ h2 {
 
 .contact-box {
   background-color: white;
-  display: flex;
 }
 .contact-left {
   flex-basis: 60%;
@@ -105,9 +106,8 @@ textarea {
   margin-top: 5px;
 }
 
-.submit-button {
-  margin-top: 40px;
-  margin-left: 100%;
+#submit-button {
+  margin-top: 10px;
 }
 
 .contact-right {
