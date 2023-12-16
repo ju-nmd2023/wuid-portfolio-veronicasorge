@@ -241,8 +241,13 @@ figure {
 
 .magazine-pics,
 #comicpic,
-#coffeetablebookpic {
+#coffeetablebookpic,
+#flyerpic {
   margin-left: 10%;
+}
+
+#flyerpic {
+  width: 40%;
 }
 
 #website-link {
